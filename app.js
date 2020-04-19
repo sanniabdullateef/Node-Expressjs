@@ -27,7 +27,7 @@ const port = process.env.PORT || 3000;
 
 app.use(morgan('tiny'));
 app.use(bodyParser.json()); 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(CookieParser());
 app.use(session({ secret: 'library' }))
 
